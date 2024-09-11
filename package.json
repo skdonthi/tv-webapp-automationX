@@ -1,0 +1,32 @@
+{
+  "name": "tv-webapp-automationx",
+  "version": "1.0.0",
+  "description": "Automation testing for Web App deployed  on TV environment (Samsung, LG)",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "test:samsung": "ts-node src/appium-samsung.ts",
+    "test:lg": "ts-node src/appium-lg.ts",
+    "wdio": "wdio run ./wdio.conf.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/chai": "^4.3.19",
+    "@types/node": "^22.5.4",
+    "@wdio/types": "^9.0.8",
+    "appium": "^2.11.3",
+    "chai": "^5.1.1",
+    "esm": "^3.2.25",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2",
+    "webdriverio": "^9.0.9"
+  },
+  "devDependencies": {
+    "@wdio/cli": "^9.0.9",
+    "@wdio/local-runner": "^9.0.9",
+    "@wdio/mocha-framework": "^9.0.8",
+    "@wdio/visual-service": "^6.0.0"
+  }
+}
